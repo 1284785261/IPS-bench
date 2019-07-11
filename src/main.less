@@ -1,0 +1,146 @@
+@color: #000;
+@succeedColor: #00ff00;
+@errorColor: #ff0000;
+@warnColor: #F00;
+@border: 1px solid rgba(235, 235, 235, 1);
+/*	
+ *	背景
+ *	颜色
+*/
+
+@background: #fff;
+/*	
+ *	字体大小
+ *	统一字体
+ *	标题字体大小
+ *	普通字体大小
+ *	菜单字体大小
+*/
+
+@fontFamily: PingFang SC;
+@titleFontSize: 20px;
+@plainFontSize: 14px;
+@menuFontSzie: 18px;
+/*	
+ *	标签初始化
+ *	
+*/
+
+* {
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+}
+
+html,
+body,
+#app {
+    height: 100%;
+    width: 100%; // position: fixed;
+    // top: 0;
+    // left: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+em {
+    font-style: inherit;
+}
+
+body {
+    font-family: @fontFamily;
+    font-size: @plainFontSize;
+    color: rgba(136, 136, 136, 1);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+/* structural elements 结构元素 */
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+/* list elements 列表元素 */
+
+pre,
+/* text formatting elements 文本格式元素 */
+
+fieldset,
+lengend,
+button,
+input,
+textarea,
+/* form elements 表单元素 */
+
+th,
+td {
+    /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+//公共表格样式
+.el-table th {
+    background-color: #EFF5F9;
+}
+
+.table-box {
+    min-width: 1010px;
+    margin: 20px;
+    background: #fff;
+    padding-bottom: 20px;
+}
+
+//公共查询按钮样式
+.buttons1 {
+    margin-top: 60px;
+    padding: 10px 38px;
+    background: #fff;
+    border: 1px solid #999;
+    color: #999;
+}
+
+.buttons2 {
+    margin-top: 60px;
+    padding: 10px 38px;
+    background: #256ad1;
+    border: 1px solid #256ad1;
+    color: #fff;
+}
+
+//公共显示件数样式
+.statistical {
+    margin-top: 30px;
+    .weight,
+    .number {
+        font-size: 16px;
+        margin: 0 10px;
+        i {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background: #ffb31c;
+            margin-bottom: 2px;
+            margin-right: 5px;
+        }
+    }
+    .weight {
+        i {
+            background: #3ab6fe;
+        }
+    }
+}
